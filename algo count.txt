@@ -1,0 +1,58 @@
+Algorithme count
+	Fonction nbre-voyelles(text:chaine de caractére):entier
+	variable 
+	i,nbre-voy : entier
+Debut
+nbre-voy <- 0
+pour i de 0 à length(text)-1
+si text[i] = 'a' ou text[i] = 'e' ou text[i] = 'i' ou text[i] = 'o' ou text[i] = 'y' alors
+nbr-voy <- nbr-voy + 1
+sinon
+nbr-voy <- nbr-voy
+fin si 
+fin pour 
+ecrire("le nombre des voyelles est" , nbr-voy)
+fin
+	fonction nbre-de caractére(text:chaine de caractére):entier
+	variable
+	i,nbre-cara : entier
+Debut
+nbre-cara <- 0
+pour i de 0 à length(text)-1
+si text[i] dans [A..Z] ou [a..z]
+nbre-cara <- nbre-cara + 1
+sinon 
+nbre-cara <- nbre-cara 
+fin si 
+fin pour
+ecrire("le nombre des caractére est" , nbr-cara)
+fin
+	fonction nbre-des mots(text:chaine de caractére):entier
+	variable
+	i,nbre-word : entier
+Debut
+nbre-word <- 0
+si length(text)>1 alors
+nbre-word = 1
+
+pour i de 1 à length(text) faire
+si texr[i] =" " or texr[i] ="." alors
+nbre-word <- nbre-word + 1
+sinon 
+nbre-word = 0
+fin si 
+fin pour
+ecrire("le nombre des mots est" , nbr-word)
+fin
+
+	variables
+	text: chaine de caractéres
+debut
+repeter
+ecrire ('entrer une phrase : ')
+lire(phrase)
+ecrire('votre phrase contient', nbr-voy , voyelles')
+ecrire('votre phrase contient', nbr-cara , caractéres')
+ecrire('votre phrase contient', nbr-word , mots')
+Fin
+	
